@@ -71,12 +71,76 @@
       }
 
       .middle {
+<<<<<<< Updated upstream
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
         text-shadow: 0 0 10px #ff0000;
+=======
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+      }
+
+      #notsponsored {
+          position: relative;
+          top: 1;
+          transition: opacity 0.2s;
+      }
+
+      @media screen and (max-width: 768px) {
+          #notsponsored {
+              text-align: center !important;
+          }
+          #madeby {
+              text-align: center !important;
+              width: 100%;
+          }
+          #joindc {
+              text-align: center !important;
+          }
+      }
+
+      .playerlist_nav {
+          padding: 1em;
+      }
+
+      .playerlist_btn {
+          float: right;
+      }
+
+      .playerlist_menu {
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: max-content;
+          z-index: 20;
+      }
+
+      .playerlist_nav.active {
+          background-color: rgba(71, 4, 4, 0.8);
+      }
+
+      .list.active {
+          display: block !important;
+      }
+
+      #madeby {
+          position: absolute;
+          right: 0;
+          width: 50%;
+          z-index: 10;
+          opacity: 0;
+          transition: opacity 0.2s;
+      }
+
+      #madeby:hover {
+          opacity: 1
+>>>>>>> Stashed changes
       }
 
       .newnew {
@@ -334,6 +398,7 @@
           <li>SOme Nraomd Guy</li>
         </ul>
       </div>
+<<<<<<< Updated upstream
       <div class="bottomleft">
         <p>
           <a target="_blank" href="https://discord.gg/renegadex"
@@ -353,6 +418,38 @@
               >
             </p>
           </div>
+=======
+    </div>
+    <div class="wrap">
+      <div class="middle">
+        <div class="old">
+          <h1 id="mapfield" class="title is-size-1 has-text-centered is-uppercase">Field</h1>
+          <span>Player Count:</span>
+          <span id="playersfield">0</span>
+          <span id="maxfield">/ 64</span>
+          <div>
+            <span>Bot Count:</span>
+            <span id="botsfield">69</span>
+          </div>
+        </div>
+        <div class="new">
+          <h1 id="addedfield">Total: 69</h1>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-gapless" id="bottom">
+      <div class="column has-text-left">
+        <p class="pt-4 pb-4 pr-4 pl-4" id="joindc">
+          <a target="_blank" href="https://discord.gg/renegadex">Join Renegade X on Discord!</a>
+        </p>
+      </div>
+      <div class="column">
+        <div class="has-text-right pt-4 pb-4 pr-4 pl-4" id="madeby">
+          <p>Made with <span class="heart">❤️</span> by <a target="_blank" href="https://github.com/sevans045">Sarah</a> and <a target="_blank" href="https://github.com/brunobits">Bruni</a></p>
+        </div>
+        <div class="has-text-right pt-4 pb-4 pr-4 pl-4" id="notsponsored">
+          <p>Not sponsored or affiliated with Totem Arts or EA</p>
+>>>>>>> Stashed changes
         </div>
       </div>
     </div>
